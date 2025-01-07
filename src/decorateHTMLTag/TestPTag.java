@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class TestPTag {
 	//doesn't use a @BeforeEach since testing different types of the same tag (diff attributes included)
-	@Test
+	@org.junit.Test
     void TestPTagWithTextOnly() {
         PTag pTag = new PTag("hello world");
         assertEquals("<p>hello world</p>", pTag.getHTMLTag());
